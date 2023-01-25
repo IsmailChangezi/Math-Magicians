@@ -1,0 +1,139 @@
+body {
+  background-color: #282c34;
+}
+
+.App {
+  background-color: #ccc;
+  height: 100vh;
+  font-size: large;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0 2%;
+  height: 15vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.flex {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  color: #996;
+}
+
+main {
+  padding: 5vh 5%;
+  height: 75vh;
+  font-family: cursive;
+}
+
+h2 {
+  font-size: xx-large;
+  margin: 0;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-container {
+  width: 60%;
+}
+
+#quote-container {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#calculatorScreen {
+  margin: 0;
+  padding: 0;
+}
+
+#result {
+  height: 50px;
+  width: 388px;
+  background-color: #636363;
+  color: #fff;
+  border: none;
+  font-size: larger;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#calcButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+#calcButtons div {
+  display: flex;
+}
+
+.calcButton {
+  height: 50px;
+  width: 100px;
+  border: 1px solid #ccc;
+}
+
+.calcButton2 {
+  height: 50px;
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+.operator {
+  background: #c62;
+}
