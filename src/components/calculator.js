@@ -1,81 +1,225 @@
 import React, { Component } from 'react';
-// eslint-disable-next-line react/prefer-stateless-function
-export default class Calculator extends Component {
+import calculate from '../logic/calculate';
+
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  onClickButton = (e) => {
+    const newState = calculate(this.state, e.target.name);
+    this.setState(newState);
+  };
+
   render() {
+    const { total } = this.state;
+    let result = total === null ? 0 : total;
+    const { next } = this.state;
+    result = next !== null ? next : result;
+
     return (
-      <div className="container">
-        <form name="calculator">
-          <div className="wrapper">
-            {/* INPUT SECTION */}
-            <div className="inputArea">
-              <input name="userInput" type="text" placeholder="0" />
+      <div id="calculator">
+        <input
+          id="result"
+          type="text"
+          name="calculator-screen"
+          value={result}
+        />
+        <div id="calcButtons">
+          <div>
+            <button
+              onClick={this.onClickButton}
+              name="AC"
+              type="button"
+              className="calcButton"
+              id="clear"
+            >
+              AC
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="+/-"
+              type="button"
+              className="calcButton"
+              id="sign"
+            >
+              +/-
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="%"
+              type="button"
+              className="calcButton"
+              id="percent"
+            >
+              %
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="÷"
+              type="button"
+              className="calcButton operator"
+              id="divide"
+            >
+              ÷
+            </button>
+          </div>
+          <div>
+            <button
+              onClick={this.onClickButton}
+              name="7"
+              type="button"
+              className="calcButton"
+              id="7"
+            >
+              7
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="8"
+              type="button"
+              className="calcButton"
+              id="8"
+            >
+              8
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="9"
+              type="button"
+              className="calcButton"
+              id="9"
+            >
+              9
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="x"
+              type="button"
+              className="calcButton operator"
+              id="multiply"
+            >
+              x
+            </button>
+          </div>
+          <div>
+            <button
+              onClick={this.onClickButton}
+              name="4"
+              type="button"
+              className="calcButton"
+              id="4"
+            >
+              4
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="5"
+              type="button"
+              className="calcButton"
+              id="5"
+            >
+              5
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="6"
+              type="button"
+              className="calcButton"
+              id="6"
+            >
+              6
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="-"
+              type="button"
+              className="calcButton operator"
+              id="less"
+            >
+              -
+            </button>
+          </div>
+          <div>
+            <button
+              onClick={this.onClickButton}
+              name="1"
+              type="button"
+              className="calcButton"
+              id="1"
+            >
+              1
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="2"
+              type="button"
+              className="calcButton"
+              id="2"
+            >
+              2
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="3"
+              type="button"
+              className="calcButton"
+              id="3"
+            >
+              3
+            </button>
+            <button
+              onClick={this.onClickButton}
+              name="+"
+              type="button"
+              className="calcButton operator"
+              id="plus"
+            >
+              +
+            </button>
+          </div>
+          <div>
+            <div>
+              <button
+                onClick={this.onClickButton}
+                name="0"
+                className="calcButton2"
+                type="button"
+                id="button17"
+              >
+                0
+              </button>
             </div>
-            {/* BUTTON SECTION */}
-            <div className="buttons">
-              <div className="btnC btnr1">
-                <input type="button" value="C" />
-              </div>
-              <div className="btnMod btnr1">
-                <input type="button" value="%" />
-              </div>
-              <div className="btnSign btnr1">
-                <input type="button" value="+/-" />
-              </div>
-              <div className="btnD btnr1">
-                <input type="button" value="/" />
-              </div>
-              <div className="btn7 btnr2">
-                <input type="button" value="7" />
-              </div>
-              <div className="btn8 btnr2">
-                <input type="button" value="8" />
-              </div>
-              <div className="btn9 btnr2">
-                <input type="button" value="9" />
-              </div>
-              <div className="btnX btnr1">
-                <input type="button" value="*" />
-              </div>
-              <div className="btn4 btnr2">
-                <input type="button" value="4" />
-              </div>
-              <div className="btn5 btnr2">
-                <input type="button" value="5" />
-              </div>
-              <div className="btn6 btnr2">
-                <input type="button" value="6" />
-              </div>
-              <div className="btnM btnr1">
-                <input type="button" value="-" />
-              </div>
-              <div className="btn1 btnr2">
-                <input type="button" value="1" />
-              </div>
-              <div className="btn2 btnr2">
-                <input type="button" value="2" />
-              </div>
-              <div className="btn3 btnr2">
-                <input type="button" value="3" />
-              </div>
-              <div className="btnA btnr1">
-                <input type="button" value="+" />
-              </div>
-              <div className="btnDecimal btnr2">
-                <input type="button" value="." />
-              </div>
-              <div className="btn0 btnr2">
-                <input type="button" value="0" />
-              </div>
-              <div className="btnBack btnr2">
-                <input type="button" value="<" />
-              </div>
-              <div className="btnE btnr1">
-                <input type="button" value="=" />
-              </div>
+            <div>
+              <button
+                onClick={this.onClickButton}
+                name="."
+                className="calcButton"
+                type="button"
+                id="button18"
+              >
+                .
+              </button>
+              <button
+                onClick={this.onClickButton}
+                name="="
+                className="calcButton operator"
+                type="button"
+                id="button19"
+              >
+                =
+              </button>
             </div>
           </div>
-        </form>
+        </div>
       </div>
     );
   }
 }
+
+export default Calculator;
