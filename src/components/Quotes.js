@@ -1,15 +1,46 @@
-import React, { Component } from 'react';
-// eslint-disable-next-line react/prefer-stateless-function
-export default class Quotes extends Component {
-  render() {
-    return (
-      <div className="quote-container">
-        <h1 className="quote">
-          Mathematics is not about numbers, equations, computations, or
-          algorithms: it is about understanding - williams Paul Thurston
-        </h1>
-        <hr />
-      </div>
-    );
+import { useState, useEffect } from 'react';
+
+const Quote = () => {
+  const [quote, setQuote] = useState('');
+  const [author, setAuthor] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    const fetchQuotes = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch(
+          'https://api.api-ninjas.com/v1/quotes?category=computers',
+          {
+            headers: {
+              'X-Api-Key': '6OswdSRYmeJgqtC+MLCqOA==iSGiiZldylP7Y018',
+            },
+          },
+        );
+        const data = await res.json();
+        const quoteData = data[0];
+        setQuote(quoteData.quote);
+        setAuthor(quoteData.author);
+      } catch (err) {
+        setError('Cannot display quotes');
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchQuotes();
+  }, []);
+  if (loading) {
+    return <p>loading.....</p>;
   }
-}
+  if (error) {
+    return <p>{error}</p>;
+  }
+  return (
+    <div className="quotes">
+      <p className="quotes-author">{author}</p>
+      <p className="quotes-quote">{quote}</p>
+    </div>
+  );
+};
+export default Quote;
