@@ -1,5 +1,6 @@
+<a name="readme-top"></a>
 
-https://math-magicians-gold.vercel.app/Calculator
+<div align="center">
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
@@ -7,13 +8,15 @@ https://math-magicians-gold.vercel.app/Calculator
 
 </div>
 
-<!-- TABLE OF CONTENTS -->
+
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -22,43 +25,91 @@ https://math-magicians-gold.vercel.app/Calculator
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [Math-magicians]
 
-> Describe your project in 1 or 2 sentences.
 
-**[Math Magicians]** 
- is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:  Make simple calculations. Read a random math-related quote.
+
+> [Math Magicians] is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote
 
 ## 🛠 Built With <a name="built-with"></a>
 
 - Major languages: html, javascript, CSS
 - Frameworks: React.js
 - Technologies used: Git, Github, Git flow, VS code editor, Webpack, jest.
+### Tech Stack <a name="tech-stack"></a>
 
+> Describe the tech stack and include only the relevant sections that apply to your project.
 
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://math-magicians-gold.vercel.app/Calculator)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-## Getting Started
 
 1. In the console run npm install.
 2. Then run npm start.
 
+
+To get a local copy up and running, follow these steps.
+
 ### Prerequisites
 
 In order to run this project you need:
- 
  The basic understanding of HTML,CSS, JS
- 
+
+
+### Install
+
+Install this project with:
+
+npm install
+npm start
+
+
+### Run tests
+
+To run tests, run the following command:
+npm test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,6 +126,7 @@ Ismail
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ismail-changezi-34a138215/)
 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,25 +146,9 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project please let me know
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank my coding partners for their helps
+If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-You can ask your questions here.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -123,6 +159,5 @@ You can ask your questions here.
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
