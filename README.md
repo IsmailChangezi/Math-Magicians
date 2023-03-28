@@ -75,7 +75,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[Interactive UI]** 
 1. This page is built on the methodology of SPA and supports different types of devices
@@ -95,7 +94,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -154,8 +153,6 @@ Github Pages
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
 - GitHub: [@IsmailChangezi](https://github.com/IsmailChangezi)
@@ -165,7 +162,6 @@ Github Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[new_feature_1]** The page will support tests for quality assurance and better UI.
 
