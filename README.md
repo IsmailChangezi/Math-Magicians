@@ -1,5 +1,8 @@
 
+<a name="readme-top"></a>
 
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
@@ -13,7 +16,9 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -22,43 +27,125 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [Math-magicians] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+>
 
-**[Math Magicians]** 
- is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:  Make simple calculations. Read a random math-related quote.
+**[ Math magicians]**  is a calculator app which offers the user the functionality of a modern calculator. It also shows many encouriging quotes from an API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- Major languages: html, javascript, CSS
-- Frameworks: React.js
-- Technologies used: Git, Github, Git flow, VS code editor, Webpack, jest.
+### Tech Stack <a name="tech-stack"></a>
+
+> React JS for the front end.
+> Linters for quality assurance
+> Ninja Api for quotes
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
 
 
+- **[Interactive UI]** 
+1. This page is built on the methodology of SPA and supports different types of devices
+- **[Encouriging quotes]** 
+1. This page let's the gain knowledge from different intellectuals around the world.
 
-<!-- GETTING STARTED -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+>
+
+- [Live Demo Link](https://math-magicians-gold.vercel.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
-## Getting Started
 
-1. In the console run npm install.
-2. Then run npm start.
 
+
+To get a local copy up and running, follow these steps.
+
+- Clone the project using **git clone**
+
+- Run **npm install** to install the project dependencies.
+
+- Run **npm start** to start the development server.
 ### Prerequisites
 
 In order to run this project you need:
- 
- The basic understanding of HTML,CSS, JS
- 
+
+- Basic JS
+
+- Basic React
+
+- Familiarity with Package.json
+### Setup
+
+Clone this repository to your desired folder:
+
+ - cd my-folder
+ - git clone git@github.com:myaccount/my-project.git
+
+
+### Install
+
+Install this project with:
+- cd my-project
+- npm install
+
+
+### Usage
+
+To run the project, execute the following command:
+
+- npm install  
+### Run tests
+
+To run tests, run the following command:
+- npm test
+
+### Deployment
+
+You can deploy this project using 
+
+Github Pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,15 +153,17 @@ In order to run this project you need:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
-Ismail
-- GitHub: [@IsmailChangezi](https://github.com/IsmailChangezi)
 
+- GitHub: [@IsmailChangezi](https://github.com/IsmailChangezi)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ismail-changezi-34a138215/)
 
+<!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **[new_feature_1]** The page will support tests for quality assurance and better UI.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,8 +183,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project please let me know
-
+If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,24 +193,15 @@ If you like this project please let me know
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank my coding partners for their helps
+I would like to thank all my fellow mentors and collaborators which helped me a lot during the program.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
-You can ask your questions here.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
